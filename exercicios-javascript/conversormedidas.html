@@ -70,7 +70,7 @@
         //se a unidade de entrada for igual a unidade de saída
         if( fromValue == toValue ) {
             outputElement.value = inputElement.value;
-            messageElement.textContent = '';
+            messageElement.textContent = 'kleber';
             return; //retorna (finaliza função)
         }
 
@@ -101,6 +101,7 @@
                 break;
             case 'km':
                 result = meters / 1000;
+                messageElement.textContent = (meters + '  equivalem a ' + result);
                 break;
             case 'cm':       
             result = meters * 100;
@@ -111,7 +112,10 @@
         }
         
         //Exibir o resultado no input de saída
-        outputElement.value = result;      
+        outputElement.value = result;     
+        
+      
+
 
     }
 
